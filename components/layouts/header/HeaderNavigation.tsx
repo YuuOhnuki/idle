@@ -8,6 +8,9 @@ const HeaderNavigation = () => {
                 className="px-4"
                 whileHover={{ scale: 1.05, boxShadow: '5px 5px #000' }}
                 whileTap={{ scale: 0.95 }}
+                initial={{ x: 150 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
                 <Link className="tracking-wider" href={'/members'}>
                     Home
@@ -17,6 +20,9 @@ const HeaderNavigation = () => {
                 className="px-4"
                 whileHover={{ scale: 1.05, boxShadow: '5px 5px #000' }}
                 whileTap={{ scale: 0.95 }}
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
                 <Link className="tracking-wider" href={'/members'}>
                     Member
@@ -26,6 +32,9 @@ const HeaderNavigation = () => {
                 className="px-4"
                 whileHover={{ scale: 1.05, boxShadow: '5px 5px #000' }}
                 whileTap={{ scale: 0.95 }}
+                initial={{ x: 50 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
                 <Link className="tracking-wider" href={'/members'}>
                     Discography
