@@ -12,7 +12,7 @@ type DiscographyCardProps = {
 
 const DiscographyCard = ({ discographies, type }: DiscographyCardProps) => {
     return (
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 min-h-screen">
             {discographies
                 .filter((discography: Discography) => discography.type == type)
                 .map((discography: Discography, index) => {
