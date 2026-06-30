@@ -12,7 +12,7 @@ const HeaderNavigation = () => {
                 animate={{ x: 0 }}
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
-                <Link className="tracking-wider" href={'/members'}>
+                <Link className="tracking-wider" href={'/'}>
                     Home
                 </Link>
             </motion.div>
@@ -36,7 +36,7 @@ const HeaderNavigation = () => {
                 animate={{ x: 0 }}
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
-                <Link className="tracking-wider" href={'/members'}>
+                <Link className="tracking-wider" href={'/discography'}>
                     Discography
                 </Link>
             </motion.div>

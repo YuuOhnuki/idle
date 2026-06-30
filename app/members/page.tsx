@@ -1,5 +1,6 @@
+'use client';
 import MemberCard from '@/components/members/MemberCard';
-import React from 'react';
+import { motion } from 'framer-motion';
 
 export type Member = {
     name: string;
@@ -14,42 +15,52 @@ const members: Member[] = [
         name: 'SOYEON',
         role: 'リーダー',
         birthday: new Date(),
-        image: '',
+        image: '/soyeon.jpg',
         introduction: 'グループの統括プロデューサー。',
     },
     {
         name: 'MIYEON',
         role: 'メインボーカル',
         birthday: new Date(),
-        image: '',
+        image: '/miyeon.jpg',
         introduction: 'グループの統括プロデューサー。',
     },
     {
         name: 'MINNIE',
         role: 'メインボーカル',
         birthday: new Date(),
-        image: '',
+        image: '/minnie.jpg',
         introduction: 'グループの統括プロデューサー。',
     },
     {
         name: 'YUQI',
         role: 'リードダンサー',
         birthday: new Date(),
-        image: '',
+        image: '/yuqi.jpg',
         introduction: 'グループの統括プロデューサー。',
     },
     {
         name: 'SHUHUA',
         role: 'サブボーカル',
         birthday: new Date(),
-        image: '',
+        image: '/shuhua.jpg',
         introduction: 'グループの統括プロデューサー。',
     },
 ];
 
 const page = () => {
-    // console.log(members);
-    return <MemberCard members={members} />;
+    return (
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
+            <div className="px-4 my-4">
+                <h1 className="text-4xl my-2 tracking-wider">Members</h1>
+                <MemberCard members={members} />
+            </div>
+        </motion.div>
+    );
 };
 
 export default page;
