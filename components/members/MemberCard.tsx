@@ -10,7 +10,7 @@ type MemberCardProps = {
 
 const MemberCard = ({ members }: MemberCardProps) => {
     return (
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-6">
             {members.map((member: Member, index) => {
                 return (
                     <motion.div

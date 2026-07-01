@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
                 protocol: 'https',
                 hostname: 'i-dle.cubeent.co.jp',
             },
+            {
+                protocol: 'https',
+                hostname: 'media.discordapp.net',
+            },
         ],
     },
 };

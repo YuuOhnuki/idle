@@ -55,7 +55,7 @@ const page = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <div className="px-4 my-4">
+            <div className="max-w-7xl mx-auto my-4 space-y-8 px-4">
                 <h1 className="text-4xl my-2 tracking-wider">Members</h1>
                 <MemberCard members={members} />
             </div>

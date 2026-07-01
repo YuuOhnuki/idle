@@ -1,5 +1,5 @@
 'use client';
-import ScrollHero from '@/components/layouts/hero/ScrollHero';
+import HeroSlider from '@/components/layouts/hero/HeroSlider';
 import AboutSection from '@/components/layouts/sections/AboutSection';
 import GallerySection from '@/components/layouts/sections/GallerySection';
 import InformationSection from '@/components/layouts/sections/InformationSection';
@@ -12,8 +12,8 @@ export default function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <div className="bg-zinc-50 dark:bg-black min-h-screen">
-                <ScrollHero />
+            <div className="">
+                <HeroSlider />
                 <div className="max-w-7xl mx-auto my-4 space-y-8 px-4">
                     <AboutSection />
                     <InformationSection />

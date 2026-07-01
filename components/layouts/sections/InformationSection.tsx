@@ -8,7 +8,7 @@ const InformationSection = () => {
     return (
         <div>
             <SectionTitle title={'Information'} />
-            <div className="flex items-center justify-evenly">
+            <div className="flex flex-wrap items-center justify-evenly gap-8">
                 <div>
                     <iframe
                         width="560"
@@ -16,6 +16,7 @@ const InformationSection = () => {
                         src="https://www.youtube.com/embed/DYgE3SGPEqk?si=mkcMjGOTm1Gm87IN"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        className="max-w-full"
                     ></iframe>
                     <h2>
                         i-dle (아이들) 'Mono (Feat. skaiwater)' Official Music
