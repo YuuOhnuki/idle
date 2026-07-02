@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionTitle from './SectionTitle';
 import { Card } from '@heroui/react';
 import Image from 'next/image';
@@ -19,8 +18,8 @@ const InformationSection = () => {
                         className="max-w-full"
                     ></iframe>
                     <h2>
-                        i-dle (아이들) 'Mono (Feat. skaiwater)' Official Music
-                        Video
+                        i-dle (아이들) &apos;Mono (Feat. skaiwater)&apos;
+                        Official Music Video
                     </h2>
                 </div>
                 <Card className="col-span-6 min-h-[400px] min-w-[400px] overflow-hidden rounded-3xl lg:col-span-6">
